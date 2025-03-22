@@ -18,12 +18,6 @@ def remove_task(index):
         print(f'Task "{removed_task}" removed.')
     else:
         print("Invalid task index.")
-def remove_task(index):
-    if 1 <= index <= len(tasks):
-        removed_task = tasks.pop(index - 1)
-        print(f'Task "{removed_task}" removed.')
-    else:
-        print("Invalid task index.")
 
 def show_menu():
     print("\n--- To-Do List Menu ---")
@@ -54,6 +48,8 @@ def main():
         elif choice == '4':
             print("Exited !")
             break
+        else:
+            print("Invalid choice. Please enter a number between 1 and 4.") 
           
 if __name__ == "__main__":
     main()
